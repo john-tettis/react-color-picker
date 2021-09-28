@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.color-form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50vh;
+
+
+    &-link{
+        font-size:3rem;
+    }
+    &-form{
+        display:flex;
+        flex-direction:column;
+
+        &-container{
+            display:flex;
+            flex-direction: column;
+            margin-top:1rem;
+
+            & input{
+                margin-top: .5rem;
+                width:100%;
+                border-radius:5px;
+
+            }
+            
+            
+        }
+
+
+    }
+    &-text-input{
+        padding:.5rem;
+        border: solid 2px rgb(96, 118, 138);
+        background-color:aliceblue;
+
+        &:focus{
+            outline:none;
+        }
+    }
+    &-button{
+        padding:.5rem;
+        margin-top:1rem;
+        display:block;
+        background-color:rgb(3, 64, 117);
+        border:none;
+        border-radius:5px;
+        color:white;
+        &:hover{
+            background-color:rgb(159, 202, 240);
+            color:black;
+        }
+    }
+    
+}
+.color-list{
+    min-height:50vh;
+    background:black;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    h2{
+        margin-top:1rem;
+        color:white
+    }
+    ul{
+        list-style: none;
+        text-align:center;
+        li{
+            font-size:1.2rem;
+            a{
+            text-decoration:none;
+            // color:rgb(143, 222, 236);
+            }
+        }
+    }
+}
+
+.color-page{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    &-container{
+        text-align:center;
+        h1{
+            font-size:5rem;
+        }
+        a{
+            
+        }
+    }
+}
+
+input[type='color']{
+    border:none;
+    padding:none;
+
+ }
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
